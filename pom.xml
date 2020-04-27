@@ -7,8 +7,13 @@
     <groupId>at.fhv.itb6.se</groupId>
     <artifactId>itb6-se-base-patterns</artifactId>
     <version>1.0</version>
+    <modules>
+        <module>itb6-se-base-patterns-example</module>
+        <module>itb6-se-base-patterns-shared</module>
+        <module>itb6-se-base-patterns-external</module>
+    </modules>
 
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <properties>
         <jdk.version>1.8</jdk.version>
