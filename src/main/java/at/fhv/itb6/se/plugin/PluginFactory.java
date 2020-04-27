@@ -1,5 +1,6 @@
 package at.fhv.itb6.se.plugin;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -14,7 +15,7 @@ public class PluginFactory {
         _props = new Properties();
         try{
             String propsFile = System.getProperty("plugins");
-            _props.load(ClassLoader.getSystemResourceAsStream(propsFile));
+            _props.load(new FileInputStream(propsFile));
         } catch (IOException e) {
             e.printStackTrace();
         }
